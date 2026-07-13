@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wedding Landing Page Builder</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="card">
+        <h1>Create a wedding landing page</h1>
+        <p>Set the couple names, date, time, and featured image to publish your page.</p>
+        <form id="wedding-form">
+          <label>
+            Page title
+            <input name="title" value="Sarah & Daniel" required />
+          </label>
+          <label>
+            Couple names
+            <input name="coupleName" value="Sarah and Daniel" required />
+          </label>
+          <label>
+            Wedding date
+            <input name="weddingDate" type="date" value="2026-10-10" required />
+          </label>
+          <label>
+            Wedding time
+            <input name="weddingTime" type="time" value="16:00" required />
+          </label>
+          <label>
+            Featured image URL
+            <input name="featuredImageUrl" value="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=80" required />
+          </label>
+          <button type="submit">Create page</button>
+        </form>
+        <div id="form-status" class="status" aria-live="polite"></div>
+      </section>
+    </main>
+    <script src="/src/components/wedding-form.js"></script>
+  </body>
+</html>
